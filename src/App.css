@@ -7,9 +7,9 @@
 }
 
 .image {
-  width: 100px;
-  height: 600px;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .right-arrow {
@@ -29,4 +29,15 @@
   left: 32px;
   font-size: 3rem;
   color: #000;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
